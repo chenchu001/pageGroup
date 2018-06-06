@@ -1,0 +1,128 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jQuery根据总页数进行分页操作代码</title>
+<link rel="stylesheet" type="text/css" href="static/css/pageGroup.css">
+<script src="http://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="static/js/pageGroup.js"></script>
+</head>
+<body>
+    <div class="content">
+        <ul class="news">
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">111222</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">222111</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">33222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">44222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">5222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">6222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">77222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">8222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: none;">9222</li>
+            <li style="display: block;">9222</li>
+        </ul>
+    </div>
+    <input type="hidden" id="start_page" value="0">
+    <input type="hidden" id="current_page" value="0">
+    <input type="hidden" id="show_per_page" value="10">
+    <input type="hidden" id="end_page" value="10">
+    <div id="pageGro" class="cb">
+        <div class="pagestart">首页</div>
+        <div class="pageUp">上一页</div>
+        <div class="pageList">
+            <ul><li>6</li><li>7</li><li>8</li><li>9</li><li class="on">10</li></ul>
+        </div>
+        <div class="pageDown">下一页</div>
+        <div class="pageend">尾页</div>
+        <div class="link-page">
+            <span>跳至</span>
+            <input type="text" />
+            <a href="javascript:;" class="pageHerf">Go</a>
+        </div>
+        <div class="page-total-info">
+            <span class="now-num">当前第<b>1</b>页</span>
+            <span class="toggle-num">共<b>1</b>页</span>
+        </div>
+    </div>
+</body>
+</html>
